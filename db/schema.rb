@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 2021_09_05_060105) do
   create_table "rooms", force: :cascade do |t|
     t.string "name"
     t.string "unique_name"
+    t.string "room_sid"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
